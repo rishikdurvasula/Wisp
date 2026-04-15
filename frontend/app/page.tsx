@@ -58,7 +58,7 @@ export default function Home() {
     } catch (e) {}
   }, [selectedDocId]);
 
-  const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001";
+  const API = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001").replace(/\/$/, "");
 
   useEffect(() => {
     setMounted(true);
