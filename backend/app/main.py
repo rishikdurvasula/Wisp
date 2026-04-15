@@ -13,7 +13,9 @@ app.include_router(query_router, prefix="/query", tags=["query"])
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # ok for dev
+    allow_origins=[
+        "https://wisp-chi.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
