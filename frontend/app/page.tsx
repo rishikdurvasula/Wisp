@@ -86,6 +86,7 @@ export default function Home() {
     if (!text) return;
     setLoading(true);
     const title = text.trim().split('\n')[0].substring(0, 30) || "Untitled Document";
+    console.log("API URL:", API);
     const res = await axios.post(`${API}/ingest/text`, {
       user_id: userId,
       title: title,
