@@ -60,6 +60,8 @@ export default function Home() {
 
   const API = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8001").replace(/\/$/, "");
 
+  console.log("FINAL API VALUE:", API);
+
   useEffect(() => {
     setMounted(true);
     setUserId("test-user");
