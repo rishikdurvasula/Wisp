@@ -15,6 +15,8 @@ This project is designed to demonstrate real-world retrieval system design, not 
 
 Link: https://wisp-chi.vercel.app/
 
+Live Demo: https://www.loom.com/share/25448ae2587d417daba95624510ba856
+
 
 ---
 
